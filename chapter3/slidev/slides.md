@@ -248,7 +248,7 @@ export default App;
 layout: default
 ---
 
-# Creating the Main App Component
+# Creating the Main App Component (App.js)
 The `App` component is the root of our application:
 
 ````md magic-move
@@ -268,7 +268,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<CalendarPageWrapper setSelectedDate={setSelectedDate} />} />
-        <Route path="/track/:date" element={<MoodTrackerPage date={selectedDate} />} />
+        <Route path="/track/:date" element={<MoodTrackerPage />} />
         <Route path="/insight/:month" element={<MonthlyInsightPage />} />
       </Routes>
     </Router>
@@ -309,7 +309,7 @@ export default App;
 layout: default
 ---
 
-# Calendar: Updating View Date and Navigating to Monthly Insight
+# Calendar: Updating View Date and Navigating to Monthly Insight (CalendarPage.jsx)
 <a href="http://localhost:3001" target="_blank">Calendar</a>
 
 
@@ -343,7 +343,7 @@ const handleMonthlyInsight = () => {
 layout: default
 ---
 
-# Calendar: Selecting a Date and Navigating to Mood Tracker
+# Calendar: Selecting a Date and Navigating to Mood Tracker (CalendarPage.jsx)
 
 ```js {1|3-7}
 const [date, setDate] = useState(new Date()); // State to track the selected date
