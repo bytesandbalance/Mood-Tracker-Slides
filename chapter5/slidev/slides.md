@@ -10,6 +10,8 @@ theme: dracula
 layout: default
 ---
 
+# Overview
+
 <a href="http://localhost:3001/insight/2024-07" target="_blank">MonthlyInsightPage</a>
 
 1. **State and Effect Hooks**
@@ -175,6 +177,7 @@ layout: default
 
 
 # Drawing the Energy Line Chart
+
 ````md magic-move
 ```js
 const drawEnergyLineChart = (data) => {
